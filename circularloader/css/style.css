@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    display: block;
+    width: 250px;
+    height: 250px;
+    border: 10px solid #CCCCFF;
+    border-radius: 50%;
+    border-top: 10px solid #AAAAFF;
+    animation: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes spin{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(359deg);
+    }
+}
